@@ -56,3 +56,7 @@
 (use-package! which-key
   :config
   (which-key-mode +1))
+
+;; Open emacs fullscreen
+(set-frame-parameter (selected-frame) 'fullscreen 'maximized)
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
